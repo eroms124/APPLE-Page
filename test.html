@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 0px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .dropdowncontent {
+            display:none;
+            position: absolute;
+            background-color: black;
+            color:aliceblue;
+            min-width: 160px;
+            z-index: 1;
+
+        }
+        .dropdown a:hover .dropdowncontent {
+            display:block
+        }
+        a {
+            margin:20px
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="dropdown">
+            <a href="">Mac</a>
+                <div class="dropdowncontent">
+                    <p><a href="">Explore all mac</a></p>
+                    <p><a href="">Macbook air</a></p>
+                    <p><a href="">Macbook pro</a></p>
+                     <p><a href="">Mac mini</a></p>
+                </div>
+            <a href="">iPAD</a>
+            <div class="dropdowncontent">
+                <a href="">Explore all iPAD</a>
+                <a href="">iPAD pro</a>
+                <a href="">iPAD mini</a>
+                <a href="">iPAD air</a>
+                <a href="">iPAD</a>
+        </nav>
+    </main>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin:0
+            
+        }
+        .menubtn {
+            background-color:grey;
+            color: aliceblue;
+            padding:18px 38px;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: grey;
+            text-align: center;
+            position: fixed;
+            top:0;
+            width: 100%;
+            
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 0px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .dropdowncontent {
+            display:none;
+            position: absolute;
+            background-color: black;
+            color:aliceblue;
+            min-width: 260px;
+            z-index: 1;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .dropdown:hover .dropdowncontent {
+            display:block
+        }
+        .dropdown:hover .menubtn {
+            background-color: black;
+        }
+        #fourteen {
+            text-align: center;
+            background-color: black;
+            color:aliceblue;
+            margin-top: 0px;
+        }
+        #mac {
+            text-align: center;
+        }
+        main {
+            width:inherit;
+            margin: 0;
+            padding: 0;
+        }
+        .display {
+            display:inline-block;
+            width: 650px;
+            height: 700px;
+            margin: 0 auto;
+            text-align:center;
+            background-color:aliceblue;
+        }
+        .display a {
+            text-decoration: none;
+            width: inherit;
+            height: inherit;
+        }
+        .display h3 {
+            width: inherit;
+            height:inherit
+        }
+        .black {
+            display: inline-block;
+            width:650px;
+            height:700px;
+            text-align: center;
+            background-color: black;
+            color:white;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="menubtn">Mac</button>
+                    <div class="dropdowncontent">
+                        <p><a class="links" href="">Explore all mac</a></p>
+                        <p><a class="links" href="">Macbook air</a></p>
+                        <p><a class="links" href="">Macbook pro</a></p>
+                        <p><a class="links" href="">Mac mini</a></p>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="menubtn">iPAD</button>
+                    <div class="dropdowncontent">
+                        <p><a href="">Explore all iPAD</a></p>
+                        <p><a href="">iPAD Pro</a></p>
+                        <p><a href="">iPAD Mini</a></p>
+                        <p><a href="">iPAD Air</a></p>
+                     </div>
+            </div>
+            <div class="dropdown">
+                <button class="menubtn">iPHONE</button>
+                    <div class="dropdowncontent">
+                        <p><a href="">Explore all iPHONE</a></p>
+                        <p><a href="">iPHONE 14 Pro</a></p>
+                        <p><a href="">iPHONE 14</a></p>
+                        <p><a href="">iPHONE 13</a></p>
+                        <p><a href="">iPHONE 12</a></p>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="menubtn">Support</button>
+                    <div class="dropdowncontent">
+                        <p><a href="">iPHONE</a></p>
+                        <p><a href="">iPAD</a></p>
+                        <p><a href="">Mac</a></p>
+                        <p><a href="">Music</a></p>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="menubtn">Where to buy</button>
+                    <div class="dropdowncontent">
+                        <p><a href="">Authorized Retailers</a></p>
+                        <p><a href="">Service and Support</a></p>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="fourteen">
+            <br><br><br>
+            <h1>iPHONE 14 Pro</h1>
+            <br<br>
+            <h3>Pro.Beyond
+            <br><br>
+            <a href="#">Learn more ></a>
+            </h3>
+            <img src="./apple.jpg">
+        </div>
+        <div id="mac">
+            <br><br>
+            <h1>MacBook Air 15</h1>
+            <h3>Impressively big. Impossibly thin
+                <br><br>
+                <a href="#">Learn More></a>
+            </h3>
+            <img src="./mac.jpg">
+        </div>
+        <div id="center">
+        <div class="display">
+            <h1>iPad</h1>
+            <h3>Loveable.Drawable.Magical 
+                <br><br>
+                <a href="#">Learn more ></a>
+                <br><br>
+                <img src="./more 1.jpg" width="300px" height="500px">
+            </h3>
+        </div>
+        <div class="display">
+            <h1>Mac Studio</h1>
+            <h3>Superchared by M2 Max and M2 ultra 
+                <br><br>
+                <a href="#">Learn more ></a>
+                <br><br>
+                <img src="./more 2.jpg" width="300px" height="500px">
+            </h3>
+        </div>
+        </div>
+        
+        <div class="black">
+            <h1>Macbook Pro</h1>
+            <h3>Supercharged by M2 pro and M2 Max
+                <br><br>
+                <a href="#">Learn more</a>
+                <br>
+                <img src="./pro 1.jpg" width="500px" height="300px">
+            </h3>
+        </div>
+        <div class="black">
+            <h1>iPad Pro</h1>
+            <h3>Supercharged by M2
+                <br><br>
+                <a href="#">Learn more ></a>
+                <br>
+                <img src="./pro 2.jpg" width="500px" height="300px">
+            </h3>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
