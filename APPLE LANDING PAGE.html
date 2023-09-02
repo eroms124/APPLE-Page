@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apple</title>
     <style>
         * {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:Arial, Helvetica, sans-serif;
             margin:0
             
         }
@@ -24,7 +24,10 @@
             position: fixed;
             top:0;
             width: 100%;
-            
+        }
+        #image {
+            display: inline-block;
+            padding:18px 38px;
         }
         .dropdown {
             position: relative;
@@ -49,14 +52,28 @@
         .dropdown:hover .menubtn {
             background-color: black;
         }
+        nav a {
+            text-decoration: none;
+            color: aliceblue;
+            display: block;
+            margin: 30px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         #fourteen {
             text-align: center;
             background-color: black;
             color:aliceblue;
             margin-top: 0px;
+            height: 600px;
+        }
+        #fourteen h1 {
+            font-size: 50px;
         }
         #mac {
             text-align: center;
+            background-color: #f9f9f9;
         }
         main {
             width:inherit;
@@ -69,7 +86,7 @@
             height: 700px;
             margin: 0 auto;
             text-align:center;
-            background-color:aliceblue;
+            background-color:#f9f9f9;
         }
         .display a {
             text-decoration: none;
@@ -88,12 +105,56 @@
             background-color: black;
             color:white;
         }
+        main a {
+            text-decoration: none;
+            color: blue;
+        }
+        main a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color:#f9f9f9;
+            height: 400px;
+            display: inline-flex;
+            flex-direction: row;
+            margin-top: 20px;
+            width: fit-content;
+            
+        }
+        footer ul {
+            list-style: none;
+            width:85px;
+         }
+         footer a {
+            text-decoration: none;
+            color: black;
+         }
+         footer a:hover {
+            text-decoration: underline;
+         }
+        h6 {
+            font-size: 15px;
+            
+        }
+        footer div {
+            display: list-item;
+            list-style: none;
+            text-align: right;
+            margin: 0 106.15px;
+        }
+        .center {
+            margin: 0 20px;
+            margin-top: 20px;
+        }
        
     </style>
 </head>
 <body>
     <header>
         <nav>
+            <div id="image">
+                <img src="./LOGO.jpg">
+            </div>
             <div class="dropdown">
                 <button class="menubtn">Mac</button>
                     <div class="dropdowncontent">
@@ -104,29 +165,29 @@
                     </div>
             </div>
             <div class="dropdown">
-                <button class="menubtn">iPAD</button>
+                <button class="menubtn">iPad</button>
                     <div class="dropdowncontent">
-                        <p><a href="">Explore all iPAD</a></p>
-                        <p><a href="">iPAD Pro</a></p>
-                        <p><a href="">iPAD Mini</a></p>
-                        <p><a href="">iPAD Air</a></p>
+                        <p><a href="">Explore all iPad</a></p>
+                        <p><a href="">iPad Pro</a></p>
+                        <p><a href="">iPad Mini</a></p>
+                        <p><a href="">iPad Air</a></p>
                      </div>
             </div>
             <div class="dropdown">
-                <button class="menubtn">iPHONE</button>
+                <button class="menubtn">iPhone</button>
                     <div class="dropdowncontent">
-                        <p><a href="">Explore all iPHONE</a></p>
-                        <p><a href="">iPHONE 14 Pro</a></p>
-                        <p><a href="">iPHONE 14</a></p>
-                        <p><a href="">iPHONE 13</a></p>
-                        <p><a href="">iPHONE 12</a></p>
+                        <p><a href="">Explore all iPhone</a></p>
+                        <p><a href="">iPhone 14 Pro</a></p>
+                        <p><a href="">iPhone 14</a></p>
+                        <p><a href="">iPhone 13</a></p>
+                        <p><a href="">iPhone 12</a></p>
                     </div>
             </div>
             <div class="dropdown">
                 <button class="menubtn">Support</button>
                     <div class="dropdowncontent">
-                        <p><a href="">iPHONE</a></p>
-                        <p><a href="">iPAD</a></p>
+                        <p><a href="">iPhone</a></p>
+                        <p><a href="">iPad</a></p>
                         <p><a href="">Mac</a></p>
                         <p><a href="">Music</a></p>
                     </div>
@@ -142,14 +203,14 @@
     </header>
     <main>
         <div id="fourteen">
-            <br><br><br>
-            <h1>iPHONE 14 Pro</h1>
+            <br><br><br><br><br>
+            <h1>iPhone 14 Pro</h1>
             <br<br>
             <h3>Pro.Beyond
             <br><br>
             <a href="#">Learn more ></a>
             </h3>
-            <img src="./apple.jpg">
+            <img src="./apple.jpg" height="380px">
         </div>
         <div id="mac">
             <br><br>
@@ -160,7 +221,7 @@
             </h3>
             <img src="./mac.jpg">
         </div>
-        <div id="center">
+        <div class="center">
         <div class="display">
             <h1>iPad</h1>
             <h3>Loveable.Drawable.Magical 
@@ -180,7 +241,7 @@
             </h3>
         </div>
         </div>
-        
+        <div class="center">
         <div class="black">
             <h1>Macbook Pro</h1>
             <h3>Supercharged by M2 pro and M2 Max
@@ -199,7 +260,63 @@
                 <img src="./pro 2.jpg" width="500px" height="300px">
             </h3>
         </div>
+        </div>
     </div>
     </main>
+    <footer>
+        <div>
+            <h6>Explore</h6>
+            <ul>
+                <a href=""><li>Mac</li></a>
+                <a href=""><li>iPad</li></a>
+                <a href=""><li>iPhone</li></a>
+            </ul>
+        </div>
+        <div>
+            <h6>Account</h6>
+            <ul>
+                <a href=""><li>Manage your Apple id</li></a>
+                <a href=""><li>iCloud.com</li></a>
+            </ul>
+        </div>
+        <div>
+            <h6>Apple Values</h6>
+            <ul>
+                <a href=""><li>Privacy</li></a>
+            </ul>
+        </div>
+        <div>
+            <h6>About Apple</h6>
+            <ul>
+                <a href=""><li>Newsroom</li></a>
+               <a href=""> <li>Apple Leadership</li></a>
+                <a href=""><li>Career Opportunities</li></a>
+                <a href=""><li>Investors</li></a>
+                <a href=""><li>Ethics and Compliance</li></a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
+
+<script type = 'text/javascript'>
+    document.getElementsByClassName('display')[0].addEventListener('click', () => {
+        window.open('#', '_self')
+    })
+    document.getElementsByClassName('display')[0].style.cursor = 'pointer'
+
+    document.getElementsByClassName('display')[1].addEventListener('click', () => {
+        window.open('#', '_self')
+    })
+    document.getElementsByClassName('display')[1].style.cursor = 'pointer'
+
+    document.getElementsByClassName('black')[0].addEventListener('click', () => {
+        window.open('#', '_self')
+    })
+    document.getElementsByClassName('black')[0].style.cursor = 'pointer'
+
+    document.getElementsByClassName('black')[1].addEventListener('click', () => {
+        window.open('#', '_self')
+    })
+    document.getElementsByClassName('black')[1].style.cursor = 'pointer'
+</script>
